@@ -1,0 +1,14 @@
+
+> beublog-backend@1.0.0 dev
+> node --watch server.js
+
+MongoDB Connected
+Server running on port 5000
+Restarting 'server.js'
+MongoDB Connected
+Server running on port 5000
+Restarting 'server.js'
+MongoDB Connected
+Server running on port 5000
+Failed running 'server.js'. Waiting for file changes before restarting...
+^C^C
