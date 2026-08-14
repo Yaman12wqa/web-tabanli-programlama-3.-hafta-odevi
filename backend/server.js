@@ -9,6 +9,11 @@ import fs from 'fs';
 // Setup env
 dotenv.config();
 
+if (!process.env.JWT_SECRET) {
+    console.error('Missing required environment variable: JWT_SECRET');
+    process.exit(1);
+}
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

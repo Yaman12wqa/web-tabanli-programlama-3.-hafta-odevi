@@ -40,7 +40,7 @@ const EditPost = () => {
                 setContent(post.content);
                 setCategoryId(post.category?._id || categoryResponse.data.data[0]?._id || '');
                 setCurrentImage(post.coverImage || '');
-            } catch (err) {
+            } catch {
                 setError('Failed to load post data.');
             } finally {
                 setFetching(false);

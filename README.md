@@ -2,6 +2,14 @@
 
 BEUBlog, React tabanli bir istemci ve Node.js/Express tabanli bir REST API ile gelistirilmis tam yigin bir blog uygulamasidir. Proje; kullanici kimlik dogrulamasi, rol bazli yetkilendirme, yazi yonetimi, kategori yonetimi ve moderasyon akislarini tek bir yapida toplar.
 
+> Ogrenme durumu: Bu repository yapay zeka destegiyle olusturulmus bir ogrenci projesidir. Repository'de kullanilan teknolojiler, proje sahibinin bu teknolojilerin tamaminda yetkin oldugu anlamina gelmez. Kod, parca parca incelenip aciklanabilir hale getirildikce proje ogrenme portfoyune alinacaktir.
+
+## Guvenlik Notu
+
+- Gercek `.env` dosyalari, JWT anahtarlari, loglar, bagimlilik klasorleri ve kullanici yuklemeleri Git'e eklenmemelidir.
+- `backend/.env.example` yalnizca guvenli ornek degerler icerir.
+- Daha once commit edilmis bir gelistirme anahtari Git gecmisinde kalabilir. Bu degisiklik gecmisi yeniden yazmaz; kullanilmis olabilecek anahtarlar ayrica degistirilmelidir.
+
 ## Proje Ozeti
 
 Bu uygulamada:
@@ -130,7 +138,7 @@ npm run dev
 
 ## Docker ile Calistirma
 
-Proje kok dizininde bir `.env` dosyasi olusturup asagidaki degiskeni ekleyebilirsiniz:
+Proje kok dizinindeki `.env.example` dosyasini `.env` olarak kopyalayip ornek anahtari guclu ve benzersiz bir gelistirme anahtariyla degistirin:
 
 ```env
 JWT_SECRET=guclu-bir-secret-key
