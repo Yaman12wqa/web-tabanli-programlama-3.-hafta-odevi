@@ -17,7 +17,7 @@ const PostDetail = () => {
             try {
                 const res = await api.get(`/posts/by-slug/${slug}`);
                 setPost(res.data.data);
-            } catch (err) {
+            } catch {
                 setError('Yazı bulunamadı');
             } finally {
                 setLoading(false);
